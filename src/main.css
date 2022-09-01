@@ -9,6 +9,20 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.interface {
+    width: 320px;
+    height: 660px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #EEE;
+    border: 1px solid #555;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
 .stats {
     display: flex;
     justify-content: space-between;

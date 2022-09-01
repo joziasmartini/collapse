@@ -10,46 +10,45 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body x-data="{ player }">
-    <div class="header">
-        <h3>Collapse Game</h3>
-    </div>
 
-    <div class="stats">
-        <div class="health">
-            <span class="info-title">Health</span>
-            <span class="info-data" x-text="player.health"></span>
+    <main class="interface">
+        <div class="stats">
+            <div class="health">
+                <span class="info-title">Health</span>
+                <span class="info-data" x-text="player.health"></span>
+            </div>
+            <div class="sleep">
+                <span class="info-title">Sleep</span>
+                <span class="info-data" x-text="player.sleep"></span> 
+    
+            </div>
+            <div class="food">
+                <span class="info-title">Food</span>
+                <span class="info-data" x-text="player.food"></span> 
+            </div>
+            <div class="water">
+                <span class="info-title">Water</span>
+                <span class="info-data" x-text="player.water"></span> 
+            </div>
         </div>
-        <div class="sleep">
-            <span class="info-title">Sleep</span>
-            <span class="info-data" x-text="player.sleep"></span> 
-
+    
+        <div class="place">
+            <img class="place-image" src="img/abandoned-house-unsplash.png">
+            You are now at Abandoned House.
         </div>
-        <div class="food">
-            <span class="info-title">Food</span>
-            <span class="info-data" x-text="player.food"></span> 
+    
+        <div class="inventory">
+            <span class="info-title">Inventory</span> 
+            bread (1), water (4), honey (2) 
         </div>
-        <div class="water">
-            <span class="info-title">Water</span>
-            <span class="info-data" x-text="player.water"></span> 
+    
+        <div class="craft">
+            <a href="#" class="button">Search</a>
+            <a href="#" class="button">Craft knife</a>
+            <a href="#" class="button">Use bread</a>
+            <a href="#" class="button">Sleep</a>
         </div>
-    </div>
-
-    <div class="place">
-        <img class="place-image" src="img/abandoned-house-unsplash.png">
-        You are now at Abandoned House.
-    </div>
-
-    <div class="inventory">
-        <span class="info-title">Inventory</span> 
-        bread (1), water (4), honey (2) 
-    </div>
-
-    <div class="craft">
-        <a href="#" class="button">Search</a>
-        <a href="#" class="button">Craft knife</a>
-        <a href="#" class="button">Use bread</a>
-        <a href="#" class="button">Sleep</a>
-    </div>
+    </main>
 
     <script>
         const player = {
