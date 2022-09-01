@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse Game</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" type="module"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="{ player }">
+    <div class="header">
+        <h3>Collapse Game</h3>
+    </div>
+
+    <div class="stats">
+        <div class="health">
+            <span class="info-title">Health</span>
+            <span class="info-data" x-text="player.health"></span>
+        </div>
+        <div class="sleep">
+            <span class="info-title">Sleep</span>
+            <span class="info-data" x-text="player.sleep"></span> 
+
+        </div>
+        <div class="food">
+            <span class="info-title">Food</span>
+            <span class="info-data" x-text="player.food"></span> 
+        </div>
+        <div class="water">
+            <span class="info-title">Water</span>
+            <span class="info-data" x-text="player.water"></span> 
+        </div>
+    </div>
+
+    <div class="place">
+        <img class="place-image" src="img/abandoned-house-unsplash.png">
+        You are now at Abandoned House.
+    </div>
+
+    <div class="inventory">
+        <span class="info-title">Inventory</span> 
+        bread (1), water (4), honey (2) 
+    </div>
+
+    <div class="craft">
+        <a href="#" class="button">Search</a>
+        <a href="#" class="button">Craft knife</a>
+        <a href="#" class="button">Use bread</a>
+        <a href="#" class="button">Sleep</a>
+    </div>
+
+    <script>
+        const player = {
+            health: 77,
+            sleep: 22,
+            food: 55,
+            water: 66,
+        }
+
+        const items = {
+            honey: {
+                name: "Honey", 
+                description: "Sweet and delicious",
+                health: 1,
+                sleep: 0,
+                food: 10,
+                water: -5,
+            },
+            waterBottle: {
+                name: "Water Bottle", 
+                description: "Just safe water",
+                health: 0,
+                sleep: 0,
+                food: 0,
+                water: 20,
+            },
+            coffee: {
+                name: "Coffee", 
+                description: "Warm and invigorating",
+                health: 0,
+                sleep: 10,
+                food: 0,
+                water: 5,
+            },
+            bread: {
+                name: "Bread", 
+                description: "A little crunchy",
+                health: 0,
+                sleep: 0,
+                food: 10,
+                water: -2,
+            },
+            medicKit: {
+                name: "Medic Kit", 
+                description: "A complete healing kit",
+                health: 100,
+                sleep: 0,
+                food: 0,
+                water: 0,
+            },
+            ointment: {
+                name: "Ointment", 
+                description: "It can help with injuries",
+                health: 10,
+                sleep: 0,
+                food: 0,
+                water: 0,
+            },
+        };
+    </script>
+</body>
+</html>

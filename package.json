@@ -1,0 +1,17 @@
+{
+  "name": "collapse",
+  "description": "A survival game.",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "live-server ./src"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joziasmartini/collapse.git"
+  },
+  "author": "Jozias Martini",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
