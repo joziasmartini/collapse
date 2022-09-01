@@ -20,16 +20,27 @@ body {
     background: #EEE;
     border: 1px solid #555;
     border-radius: 1rem;
-    padding: 2rem;
 }
 
 .stats {
+    width: 96%;
     display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin: 0.2rem 0 1rem;
-    padding: 0.3rem 0.5rem;
-    border: 1px solid #333;
+    justify-content: space-around;
+    padding: 12px 0;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.place-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .info-title {
@@ -56,17 +67,19 @@ body {
 
 .header {}
 
-.place {}
-
-.place-image {
-    display: block;
-    margin-bottom: 0.5rem;
-    max-width: 250px;
+.inventory {    
+    background: #DDD;
+    padding: 10px;
 }
 
-.inventory {}
-
 .craft {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 1rem 0;
     display: flex;
+}
+
+.craft > a {
+    margin: 8px;
 }
