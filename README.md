@@ -22,3 +22,7 @@ Create a protected base, advance on the map, prepare your supplies, upgrade your
 - There is to ways to run it:
 - Through terminal, run `node collapse.js`
 - Through browser, run `npm run dev` and access `game.html`
+
+### License
+
+This is a private project and its use by third parties is not allowed.
