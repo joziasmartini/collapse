@@ -67,6 +67,7 @@ body {
 }
 
 .inventory {
+    width: 260px;
     background: #DDD;
     padding: 10px;
 }
@@ -80,9 +81,9 @@ body {
 
 .item-data {
     display: block;
-    margin: 0 4px 0;
-    width: 48px;
-    height: 48px;
+    margin: 4px 4px 8px;
+    width: 42px;
+    height: 42px;
     background: #CCC;
 }
 
