@@ -66,11 +66,24 @@ body {
     font-size: 28px;
 }
 
-.header {}
-
-.inventory {    
+.inventory {
     background: #DDD;
     padding: 10px;
+}
+
+.inventory-items {
+    margin: 8px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-data {
+    display: block;
+    margin: 0 4px 0;
+    width: 48px;
+    height: 48px;
+    background: #CCC;
 }
 
 .craft {
@@ -79,8 +92,4 @@ body {
     flex-wrap: wrap;
     margin: 1rem 0;
     display: flex;
-}
-
-.craft > a {
-    margin: 8px;
 }
