@@ -2,7 +2,7 @@
   <h1>Collapse</h1>
   <p>Post apocalyptic urban survival game.</p>
   
-  ![image](https://user-images.githubusercontent.com/31961274/187994295-e108a943-572c-4151-ab4a-932b9f4e8399.png)
+  ![image](https://user-images.githubusercontent.com/31961274/188293816-28dc2cec-dca8-4dc0-a90c-68216a5e1847.png)
 </div>
 
 ### Introduction
