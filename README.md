@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Collapse</h1>
-  <p>Post-apocalyptic urban survival game.</p>
+  <p>Post-apocalyptic survival game.</p>
   
   ![image](https://user-images.githubusercontent.com/31961274/188293816-28dc2cec-dca8-4dc0-a90c-68216a5e1847.png)
 </div>
@@ -19,9 +19,10 @@ Create a protected base, advance on the map, prepare your supplies, upgrade your
 
 ### Running
 
-- There is to ways to run it:
-- Through terminal, run `node collapse.js`
-- Through browser, run `npm run dev` and access `game.html`
+- Install `node` and `npm` (they are installed together)
+- Through terminal, enter in the cloned folder
+- Run `npm run dev` and access `game.html`
+- With that, you are running in the browser! :)
 
 ### License
 
