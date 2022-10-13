@@ -1,5 +1,5 @@
 import './App.sass';
-import AbandonedConstruction from "../../assets/illustrations/dall-e/abandoned-construction.png";
+import AbandonedConstruction from "../../assets/illustrations/dall-e/abandoned-construction-cropped.png";
 import React from "react";
 
 function App() {
@@ -42,10 +42,9 @@ function App() {
     
         <div className="place">
             <img className="place-image" src={AbandonedConstruction}/>
-            You are now at Abandoned House.
+            You are now at Abandoned Construction.
         </div>
 
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     
         <div className="inventory">
             <span className="info-title">Inventory</span> 
