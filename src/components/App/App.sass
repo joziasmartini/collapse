@@ -12,51 +12,51 @@ body
   height: 400px
   margin: 0 auto
   display: flex
-  flex-direction: column
+  flex-direction: row
   align-items: center
   justify-content: flex-start
-  background: #EEE
-  border: 1px solid #555
-  border-radius: 1rem
+  border: 1px solid #BBB
   overflow: auto
 
 .nav
-  width: 100%
-  border-bottom: 1px solid #000
+  height: 100%
+  width: 25%
+  border-right: 1px solid #BBB
 
 .nav-content
   display: flex
-  flex-direction: row
+  flex-direction: column
   justify-content: space-between
-  padding: 12px 24px
+  padding: 16px
 
 .player
   display: flex
+  flex-direction: column
 
 .player-name
   margin-right: 8px
   font-weight: bold
+  text-transform: uppercase
 
 .player-exp
   margin-right: 8px
-  color: green
+  font-size: 14px
 
 .player-condition
   color: red
 
 .stats
   display: flex
+  flex-direction: column
 
 .place
   display: flex
   flex-direction: column
-  justify-content: center
-  align-items: center
   margin-bottom: 10px
 
 .place-image
   display: block
-  width: 500px
+  width: 200px
   margin-bottom: 10px
 
 .info-title
@@ -66,8 +66,8 @@ body
 
 .info-data
   margin: 0 8px
-  font-size: 16px
-  font-weight: bolder    
+  font-size: 14px
+  text-transform: uppercase  
 
 .button
   margin: 0 12px
@@ -91,6 +91,13 @@ body
   flex-wrap: wrap
   justify-content: space-between
 
+.right-side
+  width: 75%
+  padding: 16px
+  display: flex
+  justify-content: flex-start
+  flex-direction: column
+
 .item-data
   display: block
   margin: 4px 4px 8px
@@ -100,7 +107,7 @@ body
 
 .craft
   display: flex
-  justify-content: space-around
+  justify-content: flex-start
   flex-wrap: wrap
   margin: 1rem 0
   display: flex
