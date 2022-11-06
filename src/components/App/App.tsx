@@ -75,7 +75,13 @@ function App() {
                 You are now at Abandoned Construction.
             </div>
 
-            <div className="inventory">
+            <p>You found:</p>
+            <span>(3) Water [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
+            <span>(1) Honey [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
+            <span>(2) Bread [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
+            <span>(2) Tool [<a href="#">TAKE</a>] </span>
+
+            {/* <div className="inventory">
                 <span className="info-title">Inventory</span> 
                 <div className="inventory-items">
                     <div className="inventory-item">
@@ -101,7 +107,7 @@ function App() {
                 <i className="ph-wrench button"></i>
                 <i className="ph-bed button"></i>
                 <i className="ph-backpack button"></i>
-            </div>
+            </div> */}
         </section>
     </main>
   );
