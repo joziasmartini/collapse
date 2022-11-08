@@ -34,7 +34,6 @@ function App() {
               <div className="player-name">Player</div>
               <div className="player-exp">EXPERIENCE {experience}</div>
               <br/>
-              {/* <div className="player-condition">(bruised)</div> */}
             </div>
 
             <section className="stats">
@@ -85,41 +84,20 @@ function App() {
         <section className="right-side">
             <div className="place">
                 <img className="place-image" src={AbandonedConstruction}/>
-                You are now at Abandoned Construction.
+                <p>You are now at Abandoned Construction.</p>
             </div>
 
-            <p>You found:</p>
-            <span>(3) Water [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
-            <span>(1) Honey [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
-            <span>(2) Bread [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
-            <span>(2) Tool [<a href="#">TAKE</a>] </span>
-
-            {/* <div className="inventory">
-                <span className="info-title">Inventory</span> 
-                <div className="inventory-items">
-                    <div className="inventory-item">
-                        <span className="item-data"></span>
-                    </div>
-                    <div className="inventory-item">
-                        <span className="item-data"></span>
-                    </div>
-                    <div className="inventory-item">
-                        <span className="item-data"></span>
-                    </div>
-                    <div className="inventory-item">
-                        <span className="item-data"></span>
-                    </div>
-                    <div className="inventory-item">
-                        <span className="item-data"></span>
-                    </div>
-                </div>
+            <div className="actions">
+                <a href="#">Search Location</a>
+                <a href="#">Continue Exploring</a>
             </div>
-        
-            <div className="craft">
-                <i className="ph-magnifying-glass button"></i>
-                <i className="ph-wrench button"></i>
-                <i className="ph-bed button"></i>
-                <i className="ph-backpack button"></i>
+
+            {/* <div className="searched">
+                <p>You found:</p>
+                <span>(3) Water [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
+                <span>(1) Honey [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
+                <span>(2) Bread [<a href="#">TAKE</a>] [<a href="#">USE</a>]</span>
+                <span>(2) Tool [<a href="#">TAKE</a>] </span>
             </div> */}
         </section>
     </main>
