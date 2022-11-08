@@ -5,11 +5,24 @@ import React from "react";
 
 function App() {
   const [image, setImage] = React.useState(AbandonedConstruction);
-  const [sleep, setHappiness] = React.useState(22);
-  const [health, setHealth] = React.useState(33);
-  const [hunger, setHunger] = React.useState(77);
-  const [thirst, setThirst] = React.useState(55);
-  const [mood, setMood] = React.useState(99);
+
+  const [experience, setExperience] = React.useState(randomNumber(3000, 7000));
+  const [sleep, setHappiness] = React.useState(randomNumber(0, 100));
+  const [health, setHealth] = React.useState(randomNumber(0, 100));
+  const [hunger, setHunger] = React.useState(randomNumber(0, 100));
+  const [thirst, setThirst] = React.useState(randomNumber(0, 100));
+  const [mood, setMood] = React.useState(randomNumber(0, 100));
+
+  const [light, setLight] = React.useState("HIGH");
+  const [heat, setHeat] = React.useState("LOW");
+  const [rain, setRain] = React.useState("AVERAGE");
+  const [wind, setWind] = React.useState("LOW");
+
+  function randomNumber(min: number, max: number): number {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
   return (
     <main className="interface">
@@ -18,8 +31,8 @@ function App() {
           <section className="nav-content">
             <div className="player">
               <div className="player-avatar"></div>
-              <div className="player-name">Vincent</div>
-              <div className="player-exp">EXPERIENCE 3780</div>
+              <div className="player-name">Player</div>
+              <div className="player-exp">EXPERIENCE {experience}</div>
               <br/>
               {/* <div className="player-condition">(bruised)</div> */}
             </div>
@@ -51,19 +64,19 @@ function App() {
             <section className="environment">
               <div className="health">
                   <span className="info-title">Light</span>
-                  <span className="info-data">High</span>
+                  <span className="info-data">{light}</span>
               </div>
               <div className="health">
                   <span className="info-title">Heat</span>
-                  <span className="info-data">Low</span>
+                  <span className="info-data">{heat}</span>
               </div>
               <div className="health">
                   <span className="info-title">Rain</span>
-                  <span className="info-data">Average</span>
+                  <span className="info-data">{rain}</span>
               </div>
               <div className="health">
                   <span className="info-title">Wind</span>
-                  <span className="info-data">Low</span>
+                  <span className="info-data">{wind}</span>
               </div>
             </section>
           </section>
