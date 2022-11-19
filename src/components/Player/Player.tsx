@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { randomNumber } from "../../assets/utils/utils";
+import { randomNumber } from "../../utils/utils";
 import "./Player.sass";
 
 export default function Player() {
