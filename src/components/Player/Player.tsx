@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { randomNumber } from "../Utils/Utils";
-import "./Player.sass"
+import { randomNumber } from "../../assets/utils/utils";
+import "./Player.sass";
 
-type Props = {}
-
-export default function Player({}: Props) {
+export default function Player() {
   const [experience, setExperience] = useState(randomNumber(3000, 7000));
   const [sleep, setHappiness] = useState(randomNumber(0, 100));
   const [health, setHealth] = useState(randomNumber(0, 100));
@@ -24,52 +22,52 @@ export default function Player({}: Props) {
           <div className="player-avatar"></div>
           <div className="player-name">Player</div>
           <div className="player-exp">EXPERIENCE {experience}</div>
-          <br/>
+          <br />
         </div>
 
         <section className="stats">
           <div className="health">
-              <span className="info-title">Health</span>
-              <span className="info-data">{health}</span>
+            <span className="info-title">Health</span>
+            <span className="info-data">{health}</span>
           </div>
           <div className="sleep">
-              <span className="info-title">Sleep</span>
-              <span className="info-data">{sleep}</span> 
+            <span className="info-title">Sleep</span>
+            <span className="info-data">{sleep}</span>
           </div>
           <div className="food">
-              <span className="info-title">Food</span>
-              <span className="info-data">{hunger}</span> 
+            <span className="info-title">Food</span>
+            <span className="info-data">{hunger}</span>
           </div>
           <div className="water">
-              <span className="info-title">Water</span>
-              <span className="info-data">{thirst}</span> 
+            <span className="info-title">Water</span>
+            <span className="info-data">{thirst}</span>
           </div>
           <div className="water">
-              <span className="info-title">Mood</span>
-              <span className="info-data">{mood}</span> 
+            <span className="info-title">Mood</span>
+            <span className="info-data">{mood}</span>
           </div>
         </section>
 
-        <br/>
+        <br />
         <section className="environment">
           <div className="health">
-              <span className="info-title">Light</span>
-              <span className="info-data">{light}</span>
+            <span className="info-title">Light</span>
+            <span className="info-data">{light}</span>
           </div>
           <div className="health">
-              <span className="info-title">Heat</span>
-              <span className="info-data">{heat}</span>
+            <span className="info-title">Heat</span>
+            <span className="info-data">{heat}</span>
           </div>
           <div className="health">
-              <span className="info-title">Rain</span>
-              <span className="info-data">{rain}</span>
+            <span className="info-title">Rain</span>
+            <span className="info-data">{rain}</span>
           </div>
           <div className="health">
-              <span className="info-title">Wind</span>
-              <span className="info-data">{wind}</span>
+            <span className="info-title">Wind</span>
+            <span className="info-data">{wind}</span>
           </div>
         </section>
       </section>
     </nav>
-  )
+  );
 }
