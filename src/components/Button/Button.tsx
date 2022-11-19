@@ -8,7 +8,7 @@ type Props = {
 export default function Button({ text, onClick }: Props) {
   return (
     <div>
-      <button className="button-component" onClick={onClick}>
+      <button className="button-component" onClick={() => onClick()}>
         {text}
       </button>
     </div>
