@@ -1,6 +1,6 @@
 import "./Location.sass";
 // import AbandonedConstruction from "../../assets/illustrations/dall-e/abandoned-construction-cropped.png";
-import { useState } from "react";
+import Button from "../Button/Button";
 
 type Props = {};
 
@@ -12,8 +12,8 @@ export default function Location({}: Props) {
       </div>
 
       <div className="actions">
-        <a href="#">Search Location</a>
-        <a href="#">Continue Exploring</a>
+        <Button text="Search Location" onClick={() => {}} />
+        <Button text="Continue Exploring" onClick={() => {}} />
       </div>
 
       {/* <div className="searched">
