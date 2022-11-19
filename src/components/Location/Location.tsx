@@ -1,16 +1,13 @@
 import "./Location.sass";
-import AbandonedConstruction from "../../assets/illustrations/dall-e/abandoned-construction-cropped.png";
+// import AbandonedConstruction from "../../assets/illustrations/dall-e/abandoned-construction-cropped.png";
 import { useState } from "react";
 
 type Props = {};
 
 export default function Location({}: Props) {
-  const [image, setImage] = useState(AbandonedConstruction);
-
   return (
     <section className="right-side">
       <div className="place">
-        <img className="place-image" src={AbandonedConstruction} />
         <p>You are now at Abandoned Construction.</p>
       </div>
 
