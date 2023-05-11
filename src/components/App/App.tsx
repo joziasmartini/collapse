@@ -1,18 +1,18 @@
 import "./App.sass";
-import CollapseLogo from "../../assets/collapse-bad-grunge-font.png";
-import React from "react";
 import Player from "../Player/Player";
 import Location from "../Location/Location";
+import Logo from "../Logo/Logo";
+import Interface from "../Interface/Interface";
 
 function App() {
   return (
-    <div className="app-container">
-      <img className="logo" src={CollapseLogo} alt="" />
-      <main className="interface">
+    <>
+      <Logo />
+      <Interface>
         <Player />
         <Location />
-      </main>
-    </div>
+      </Interface>
+    </>
   );
 }
 
